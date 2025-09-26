@@ -71,6 +71,7 @@ header svg {
   display: flex;
   flex-direction: column;
   align-items: start;
+  justify-content: space-between;
 }
 
 .menu_item p {
