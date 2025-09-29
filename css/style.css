@@ -2,16 +2,24 @@ header {
   color: white;
   fill: white;
   background: transparent;
-  padding-top: 1.5rem;
-  font-size: 18px;
+  padding: 1.5rem 0;
+  font-size: 12px;
   position: absolute;
   width: 100%;
+  border-bottom: 1px solid #7e868e1a;
 }
 
 header > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header_contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
 }
 
 .header_geo,
@@ -34,7 +42,7 @@ header svg {
 }
 
 .main_section > .container {
-  padding: 5rem 3rem;
+  padding: 5rem 0rem;
 }
 
 .main_section h1,
@@ -94,7 +102,7 @@ header svg {
 .form_section {
   position: relative;
   background-color: #081130;
-  padding: 20% 0 2rem 0;
+  padding: 15% 0 3rem 0;
 }
 
 .form_section .section_background {
@@ -128,15 +136,15 @@ header svg {
   position: absolute;
   width: 10%;
   transform: rotate(180deg);
-  bottom: -18%;
-  left: -6%;
+  bottom: -10%;
+  left: -3%;
 }
 
 .form_berry_rt {
   position: absolute;
   width: 10%;
-  right: -6%;
-  top: -18%;
+  right: -3%;
+  top: -10%;
 }
 
 .form_section form {
