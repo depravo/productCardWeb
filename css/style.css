@@ -27,6 +27,11 @@ header {
   display: flex;
 }
 
+.header_phone span {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
 header svg {
   width: 40px;
   height: 40px;
@@ -307,11 +312,17 @@ footer {
 }
 
 @media (width < 860px) {
-  header {
-    display: none;
+  .header_container {
+    gap: 2rem;
   }
-  .main_section {
-    padding: 0;
+  .header_contacts {
+    gap: 1rem;
+  }
+  .header_phone span {
+    font-weight: normal;
+  }
+  header svg {
+    margin: 0;
   }
   .main_section .main_container {
     padding-top: 2rem;
@@ -337,8 +348,16 @@ footer {
   .footer_container {
     max-width: 500px;
   }
-  header {
-    display: none;
+  header svg {
+    width: 25px;
+    height: 25px;
+  }
+  .header_container {
+    justify-content: normal;
+    gap: 1rem;
+  }
+  .header_phone span {
+    font-size: 1.15rem;
   }
   .menu_catalog {
     display: flex;
@@ -351,6 +370,19 @@ footer {
   .main_container,
   .footer_container {
     max-width: 300px;
+  }
+  header {
+    padding-bottom: 0.5rem;
+  }
+  .header_container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .header_phone span {
+    font-size: 1rem;
+  }
+  .main_section {
+    padding-top: 8.5rem;
   }
   .main_section h1,
   .main_section p {
@@ -392,6 +424,6 @@ footer {
     align-items: flex-start;
   }
   .form_checkbox input {
-    margin: 0.2rem 0 0 0.2rem
+    margin: 0.2rem 0 0 0.2rem;
   }
 }
