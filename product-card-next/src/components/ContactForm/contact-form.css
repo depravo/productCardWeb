@@ -1,0 +1,171 @@
+.form_section {
+  position: relative;
+  background-color: #081130;
+  padding: 15% 0 3rem 0;
+}
+
+.form_section .section_background {
+  z-index: 0;
+  height: fit-content;
+}
+
+.form_section .container {
+  background-color: white;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.form_leaf_lt {
+  position: absolute;
+  width: 10%;
+  transform: rotate(-90deg);
+  top: -8%;
+  left: -3%;
+}
+
+.form_leaf_rb {
+  position: absolute;
+  width: 10%;
+  transform: rotate(90deg);
+  right: -4%;
+  bottom: -8%;
+}
+
+.form_berry_lb {
+  position: absolute;
+  width: 10%;
+  transform: rotate(180deg);
+  bottom: -10%;
+  left: -3%;
+}
+
+.form_berry_rt {
+  position: absolute;
+  width: 10%;
+  right: -3%;
+  top: -10%;
+}
+
+.form_section form {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2e363e;
+}
+
+.form_notice {
+  padding-bottom: 1.5rem;
+}
+
+.form_input {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  width: 45%;
+}
+
+.form_input input {
+  border: none;
+  border-radius: 0.4rem;
+  width: 100%;
+  background-color: #f2f6fa;
+  background-image: url("data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2215px%22%20height%3D%2215px%22%20viewBox%3D%220%200%20512%20512%22%20fill%3D%22%237E868E%22%3E%3C!--!Font%20Awesome%20Free%20v7.0.1%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M160.2%2025C152.3%206.1%20131.7-3.9%20112.1%201.4l-5.5%201.5c-64.6%2017.6-119.8%2080.2-103.7%20156.4%2037.1%20175%20174.8%20312.7%20349.8%20349.8%2076.3%2016.2%20138.8-39.1%20156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47%2011.8l-38.6%2047.2C233.9%20335.4%20177.3%20277%20144.8%20205.3L189%20169.3c13.9-11.3%2018.6-30.4%2011.8-47L160.2%2025z%22%2F%3E%3C%2Fsvg%3E");
+  background-position: 0.5rem center;
+  background-repeat: no-repeat;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.form_input input:focus-visible {
+  outline-color: #2e363e;
+}
+
+.form_input .bttn {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_checkbox {
+  display: flex;
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #7e868e;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.checkbox-input {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #0d6efd;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin: 0;
+}
+
+.checkbox-input:hover:not(:disabled) {
+  border-color: #0d6efd;
+}
+
+@media (860px <= width < 1100px) {
+  .form_input {
+    width: 60%;
+  }
+}
+
+@media (width < 1100px) {
+  .form_section .container {
+    padding: 0;
+  }
+}
+
+@media (width < 860px) {
+  .form_input {
+    width: 100%;
+  }
+  .section_background {
+    object-fit: cover;
+  }
+}
+
+@media (width < 555px) {
+  .form_leaf_lt {
+    top: -2%;
+    left: -3%;
+  }
+
+  .form_leaf_rb {
+    right: -4%;
+    bottom: -2%;
+  }
+
+  .form_berry_lb {
+    bottom: -2%;
+    left: -3%;
+  }
+
+  .form_berry_rt {
+    right: -3%;
+    top: -2%;
+  }
+  .form_input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .form_section form {
+    text-align: center;
+  }
+  .form_checkbox {
+    align-items: flex-start;
+  }
+  .form_checkbox input {
+    margin: 0.2rem 0 0 0.2rem;
+  }
+}
