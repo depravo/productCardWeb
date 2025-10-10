@@ -1,20 +1,20 @@
 import React from "react";
 import "./main-section.css";
 import CustomButton from "../UI/Button/CustomButton";
-import bg from "@/../public/images/back1.png"
+import bg from "@/../public/images/back1.png";
 import Image from "next/image";
-import {IButtonProps} from "@/types/IButtonProps";
+import { IButtonProps } from "@/types/IButtonProps";
 
 export default function MainSection() {
   const btnCatalog: IButtonProps = {
     text: "Перейти в каталог",
-    link: "menu_section",
+    link: "/catalog",
   };
   const btnYummy: IButtonProps = {
     text: "ВКУСНЕЙШИЙ",
-    link:"",
-    variant:"secondary"
-  }
+    link: "",
+    variant: "secondary",
+  };
   return (
     <section className="main_section">
       <Image src={bg} className="section_background" alt="background" />

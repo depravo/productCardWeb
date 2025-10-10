@@ -1,13 +1,13 @@
-footer {
+.footer {
   display: flex;
   background-color: #081130;
   color: #7e868e;
   border: none;
-  padding-bottom: 3rem;
+  padding: 0.5rem 0 3rem 0;
   justify-content: center;
 }
 
-footer .container {
+.footer .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -20,13 +20,13 @@ footer .container {
 }
 
 @media (width < 635px) {
-  footer .container {
+  .footer .container {
     padding: 5px;
   }
 }
 
 @media (width < 555px) {
-  footer .container {
+  .footer .container {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;

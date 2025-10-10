@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useState } from "react";
 import "./contact-form.css";
@@ -12,7 +12,7 @@ import { IButtonProps } from "@/types/IButtonProps";
 export default function ContactForm() {
   const [phoneNumber, setPhoneNumber] = useState("");
 
-  function handleChange(e : React.ChangeEvent<HTMLInputElement>) {
+  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     setPhoneNumber(e.target.value);
   }
 

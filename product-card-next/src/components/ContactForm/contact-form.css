@@ -54,6 +54,11 @@
   color: #2e363e;
 }
 
+form img {
+  width: auto;
+  height: auto;
+}
+
 .form_notice {
   padding-bottom: 1.5rem;
 }

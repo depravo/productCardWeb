@@ -14,7 +14,7 @@
   display: grid;
   grid-template-columns: repeat(var(--cols-number, 3), 1fr);
   gap: 1rem;
-  padding-top: 0.5rem;
+  padding: 0.75rem 0;
 }
 
 @media (width < 1100px) {

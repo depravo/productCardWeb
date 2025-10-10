@@ -1,4 +1,4 @@
-header {
+.header {
   color: white;
   fill: white;
   background: transparent;
@@ -10,11 +10,17 @@ header {
   z-index: 1;
 }
 
+.header_link {
+  text-decoration: none;
+  color: white;
+  fill: white;
+}
+
 .header_title {
   font-size: 1.5rem;
 }
 
-header .container {
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,14 +50,14 @@ header .container {
   color: #fed84c
 }
 
-header svg {
+.header svg {
   width: 40px;
   height: 40px;
   margin-right: 1.25rem;
 }
 
 @media (width < 860px) {
-  header .container {
+  .header .container {
     gap: 2rem;
   }
   .header_contacts {
@@ -60,17 +66,17 @@ header svg {
   .phone_link {
     font-weight: normal;
   }
-  header svg {
+  .header svg {
     margin: 0;
   }
 }
 
 @media (width < 635px) {
-  header svg {
+  .header svg {
     width: 25px;
     height: 25px;
   }
-  header .container {
+  .header .container {
     justify-content: normal;
     gap: 1rem;
   }
@@ -80,10 +86,10 @@ header svg {
 }
 
 @media (width < 555px) {
-  header {
+  .header {
     padding-bottom: 0.5rem;
   }
-  header .container {
+  .header .container {
     flex-direction: column;
     gap: 1rem;
   }

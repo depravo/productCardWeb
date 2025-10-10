@@ -3,7 +3,7 @@ import "./custom-footer.css"
 
 export default function CustomFooter() {
   return (
-    <footer>
+    <footer className='footer'>
       <div className="container">
         <div className="footer_agreement">Согласие на обработку данных</div>
         <div className="footer_help">Служба поддержки</div>

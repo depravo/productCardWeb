@@ -1,11 +1,12 @@
 import React from "react";
 import "./custom-header.css";
+import Link from "next/link";
 
 export default function CustomHeader() {
   return (
-    <header>
+    <header className="header">
       <div className="container">
-        <span className="header_title">Сладкий сундук</span>
+        <span className="header_title"><Link className="header_link" href={"/"}>Сладкий сундук</Link></span>
         <div className="header_contacts">
           <div className="header_geo">
             <svg>
