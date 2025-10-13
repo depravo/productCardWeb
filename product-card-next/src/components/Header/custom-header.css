@@ -14,6 +14,7 @@
   text-decoration: none;
   color: white;
   fill: white;
+  transition: color 0.3s ease;
 }
 
 .header_title {
@@ -46,7 +47,7 @@
   transition: color 0.3s ease;
 }
 
-.phone_link:hover {
+.header a:hover {
   color: #fed84c
 }
 
