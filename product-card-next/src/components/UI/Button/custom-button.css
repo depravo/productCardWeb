@@ -1,0 +1,24 @@
+.bttn {
+  padding: 0.8rem 1rem;
+  border-radius: 0.33rem;
+  color: #2e363e;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.primary {
+  background-color: #fed84c;
+}
+
+.secondary {
+  background-color: #f2f6fa;
+}
+
+@media (width < 860px) {
+  .bttn {
+    white-space: normal;
+  }
+}

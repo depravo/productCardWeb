@@ -1,1 +1,0 @@
-Training project: product card web page

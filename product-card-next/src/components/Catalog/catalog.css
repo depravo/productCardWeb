@@ -1,0 +1,31 @@
+.menu_section .container {
+  color: #2e363e;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu_section h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin: 1.5rem 0;
+}
+
+.menu_catalog {
+  display: grid;
+  grid-template-columns: repeat(var(--cols-number, 3), 1fr);
+  gap: 1rem;
+  padding: 0.75rem 0;
+}
+
+@media (width < 1100px) {
+  .menu_catalog {
+    --cols-number: 2;
+  }
+}
+
+@media (width < 635px) {
+  .menu_catalog {
+    display: flex;
+    flex-direction: column;
+  }
+}
