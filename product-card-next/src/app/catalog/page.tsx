@@ -1,13 +1,14 @@
-import { loadArts } from "@/lib/api";
+import { loadArts } from "@/services/api";
 import Catalog from "@/components/Catalog/Catalog";
-import "./page.module.css";
+import CustomHeader from "@/components/Header/CustomHeader";
 
-export default async function Home() {
+export default async function CatalogPage() {
   const artItems = await loadArts();
 
   return (
-    <div className={"root"}>
-      <Catalog items={artItems}/>
-    </div>
+    <>
+      {/* <CustomHeader pageType={"catalog-page"}></CustomHeader> */}
+      <Catalog items={artItems} />
+    </>
   );
 }

@@ -10,6 +10,12 @@
   z-index: 1;
 }
 
+.header.catalog-page {
+  background-color: #081130;
+  position: relative;
+  z-index: auto;
+}
+
 .header_link {
   text-decoration: none;
   color: white;

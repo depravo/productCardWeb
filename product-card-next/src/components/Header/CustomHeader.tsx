@@ -2,11 +2,16 @@ import React from "react";
 import "./custom-header.css";
 import Link from "next/link";
 
-export default function CustomHeader() {
+export default function CustomHeader(props: { pageType?: string }) {
+  const { pageType = "" } = props;
   return (
-    <header className="header">
+    <header className={`header ${pageType}`}>
       <div className="container">
-        <span className="header_title"><Link className="header_link" href={"/"}>Сладкий сундук</Link></span>
+        <span className="header_title">
+          <Link className="header_link" href={"/"}>
+            Сладкий сундук
+          </Link>
+        </span>
         <div className="header_contacts">
           <div className="header_geo">
             <svg>

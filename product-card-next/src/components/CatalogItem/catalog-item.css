@@ -1,22 +1,36 @@
-.menu_item {
+.card {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 5%;
-  padding: 0.5rem;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  gap: 0.5rem;
 }
 
-.menu_item p {
-  margin: 0 0 0.5rem 1.25rem ;
-  width: 80%;
+.card_link {
+  width: 100%;
+  height: fit-content;
+}
+
+picture {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+
+.card_body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .item_img {
   object-fit: cover;
-  margin: 0.25rem 0 0 1.25rem;
-  border-radius: 5%;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
 }
 
 .item_title {

@@ -7,11 +7,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="ru">
       <body>
-        <CustomHeader></CustomHeader>
-        <main>{children}</main>
+        {children}
         <CustomFooter></CustomFooter>
         <div className="svgs">
           <svg>

@@ -36,17 +36,17 @@ export const loadArts = async () => {
     const artPromises = artIds.map((id: number) => getArtInfo(id));
     const artsDataArray = await Promise.all(artPromises);
 
-    const artsArr: ArtItem[] = artsDataArray
-      .map(
-        (item) =>
-          new ArtItem(
-           item.data.primaryImageSmall,
-            item.data.objectName,
-            item.data.title,
-            item.data.department,
-            item.data.objectDate
-          )
-      );
+    const artsArr: ArtItem[] = artsDataArray.map(
+      (item) =>
+        new ArtItem(
+          item.data.objectID,
+          item.data.primaryImageSmall,
+          item.data.objectName,
+          item.data.title,
+          item.data.department,
+          item.data.objectDate
+        )
+    );
     console.log(artsArr);
     return artsArr;
   } catch (error) {
